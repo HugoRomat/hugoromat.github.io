@@ -17,6 +17,7 @@ robots.txt              # Search-engine crawling rules and sitemap location
 sitemap.xml             # Search-engine sitemap for the site
 assets/
   hugo.png              # Portrait shown in the sidebar
+  hugo-400.jpg          # Optimized portrait served to browsers
   favicon.svg           # "HR" favicon
   logos/                # Institution logos (placeholders): microsoft, eth, inria, ensc, laval
 ```
