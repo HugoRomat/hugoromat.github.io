@@ -267,7 +267,7 @@ h2.section {
   margin: 0;
 }
 .xp-org {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 14.5px;
   color: var(--ink-soft);
   margin: 2px 0 0;
