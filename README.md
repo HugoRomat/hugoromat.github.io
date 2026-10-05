@@ -13,6 +13,8 @@ code here are Hugo's own.
 index.html              # The whole page (sidebar + About / Experience / Research / Education)
 styles.css              # All styling
 script.js               # Cite popovers, copy-to-clipboard, smooth scroll, active-nav highlight
+robots.txt              # Search-engine crawling rules and sitemap location
+sitemap.xml             # Search-engine sitemap for the site
 assets/
   hugo.png              # Portrait shown in the sidebar
   favicon.svg           # "HR" favicon
@@ -53,6 +55,7 @@ optional award badge (`<span class="award">…</span>`), DOI/arXiv links, and Bi
 
 ## Deploy
 
-It's fully static, so any static host works — GitHub Pages, Netlify, Azure Static Web
-Apps, etc. For GitHub Pages, push to a repo and enable Pages on the default branch root.
-
+The site is deployed with GitHub Pages at <https://hugoromat.github.io/>. Push to the
+default branch and enable Pages from the branch root. If the deployment URL changes,
+also update the canonical and Open Graph URLs in `index.html`, plus `robots.txt` and
+`sitemap.xml`.
