@@ -3,7 +3,7 @@
 A single-page personal/academic portfolio for **Hugo Romat, Ph.D.**, Senior Research
 Engineer at Microsoft Research. Static HTML/CSS/JS — no build step required to deploy.
 
-The design (warm paper palette, single teal accent, Manrope + Newsreader type, sticky
+The design (warm paper palette, single teal accent, Inter type, sticky
 sidebar) is inspired by the layout of academic portfolio sites; all content, copy, and
 code here are Hugo's own.
 
