@@ -165,7 +165,7 @@
 
     /* Elements that fade/slide in as they enter the viewport */
     var targets = Array.prototype.slice.call(document.querySelectorAll(
-      '.about > p, .section, .xp, .pub-intro, .pub-year, .pub, ' +
+      '.about > p, .section, .projects-intro, .project-card, .xp, .pub-intro, .pub-year, .pub, ' +
       '.featured-card, .edu'
     ));
     if (!targets.length) return;
