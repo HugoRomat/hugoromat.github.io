@@ -19,7 +19,6 @@ assets/
   hugo.png              # Portrait shown in the sidebar
   hugo-400.jpg          # Optimized portrait served to browsers
   favicon.svg           # "HR" favicon
-  projects/             # Local poster images for EPIC exploration cards
   logos/                # Institution logos (placeholders): microsoft, eth, inria, ensc, laval
 ```
 

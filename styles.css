@@ -266,7 +266,7 @@ h2.section {
   border-color: var(--line-strong);
   box-shadow: 0 16px 34px -24px rgba(17, 17, 17, 0.45);
 }
-.project-card video {
+.project-card > img {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 10;
