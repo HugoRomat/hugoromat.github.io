@@ -1,4 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Hugo Romat">
-  <rect width="32" height="32" rx="6" fill="#111111"/>
-  <text x="16" y="23" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="22" fill="#fdfcf9">H</text>
+  <defs>
+    <linearGradient id="pastel" x1="8" y1="8" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#dbe7ff"/>
+      <stop offset=".55" stop-color="#ddf3e6"/>
+      <stop offset="1" stop-color="#fdeee4"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="9" fill="#18181b"/>
+  <rect x=".5" y=".5" width="31" height="31" rx="8.5" fill="none" stroke="#ffffff" stroke-opacity=".12"/>
+  <path d="M10 9v14M22 9v14M10 16h12" fill="none" stroke="url(#pastel)" stroke-width="4" stroke-linecap="round"/>
 </svg>
