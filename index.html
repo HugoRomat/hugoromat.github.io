@@ -1,0 +1,1352 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Hugo Romat | Inventing New Mediums for the Age of AI</title>
+<meta name="description" content="Hugo Romat is a Microsoft Research engineer inventing new mediums for the age of AI, where content comes alive, responds to you, and is shaped through interaction." />
+<meta name="author" content="Hugo Romat" />
+<meta name="keywords" content="Hugo Romat, future of media, new mediums, generative media, interactive media, Generative AI, Human-AI Interaction, Human-Computer Interaction, Microsoft Research" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://hugoromat.github.io/" />
+<meta name="theme-color" content="#ffffff" />
+<meta name="color-scheme" content="only light" />
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Hugo Romat | Inventing New Mediums for the Age of AI" />
+<meta property="og:description" content="Microsoft Research engineer inventing new mediums for the age of AI, where content comes alive, responds to you, and is shaped through interaction." />
+<meta property="og:url" content="https://hugoromat.github.io/" />
+<meta property="og:site_name" content="Hugo Romat" />
+<meta property="og:image" content="https://hugoromat.github.io/assets/hugo.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="800" />
+<meta property="og:image:height" content="800" />
+<meta property="og:image:alt" content="Hugo Romat, Microsoft Research engineer inventing new mediums for the age of AI" />
+<meta property="og:locale" content="en_US" />
+<meta property="profile:first_name" content="Hugo" />
+<meta property="profile:last_name" content="Romat" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Hugo Romat | Inventing New Mediums for the Age of AI" />
+<meta name="twitter:description" content="Microsoft Research engineer inventing new mediums for the age of AI, where content comes alive, responds to you, and is shaped through interaction." />
+<meta name="twitter:image" content="https://hugoromat.github.io/assets/hugo.png" />
+<meta name="twitter:image:alt" content="Hugo Romat, Microsoft Research engineer inventing new mediums for the age of AI" />
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://hugoromat.github.io/#hugo-romat",
+  "name": "Hugo Romat",
+  "givenName": "Hugo",
+  "familyName": "Romat",
+  "url": "https://hugoromat.github.io/",
+  "image": "https://hugoromat.github.io/assets/hugo.png",
+  "mainEntityOfPage": {
+    "@type": "ProfilePage",
+    "@id": "https://hugoromat.github.io/#profile",
+    "url": "https://hugoromat.github.io/",
+    "name": "Hugo Romat | Inventing New Mediums for the Age of AI"
+  },
+  "jobTitle": "Senior Research Engineer",
+  "honorificSuffix": "Ph.D.",
+  "memberOf": { "@type": "Organization", "name": "EPIC (Extended Perception, Interaction & Cognition), Microsoft Research", "url": "https://www.microsoft.com/en-us/research/group/epic/" },
+  "workLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressLocality": "Seattle", "addressRegion": "WA", "addressCountry": "US" } },
+  "email": "mailto:romathugo@microsoft.com",
+  "description": "Microsoft Research engineer inventing new mediums for the age of AI, where content comes alive, responds to you, and is shaped through interaction.",
+  "worksFor": { "@type": "Organization", "name": "Microsoft Research", "url": "https://www.microsoft.com/en-us/research/" },
+  "alumniOf": [
+    { "@type": "Organization", "name": "Inria" },
+    { "@type": "CollegeOrUniversity", "name": "ETH Zurich" }
+  ],
+  "knowsAbout": ["Future of Media", "New Media", "Generative Media", "Interactive Media", "Generative AI", "Human-AI Interaction", "Machine Learning", "Human-Computer Interaction", "Diffusion Models", "Pen & Ink Interaction"],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=OaWHvB8AAAAJ&hl=en",
+    "https://dblp.org/pid/177/8707.html",
+    "https://dl.acm.org/profile/99658993819",
+    "https://www.linkedin.com/in/hugo-romat-3a64b188/"
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="ms" viewBox="0 0 22 22"><rect x="0" y="0" width="10" height="10" fill="currentColor"/><rect x="12" y="0" width="10" height="10" fill="currentColor"/><rect x="0" y="12" width="10" height="10" fill="currentColor"/><rect x="12" y="12" width="10" height="10" fill="currentColor"/></symbol>
+  <symbol id="doi" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="1"/><text x="10" y="12" font-family="Arial, sans-serif" font-size="5" font-weight="700" text-anchor="middle" fill="currentColor">DOI</text></symbol>
+  <symbol id="acm" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="1"/><text x="10" y="12" font-family="Arial, sans-serif" font-size="5" font-weight="700" text-anchor="middle" fill="currentColor">ACM</text></symbol>
+  <symbol id="arxiv" viewBox="0 0 20 20"><path d="M4 4l12 12M4 16l5-6M11 8l5-4" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></symbol>
+  <symbol id="link" viewBox="0 0 20 20"><path d="M8 12l4-4M7 7h5v5" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 11v4.5H4.5V6H9" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/></symbol>
+  <symbol id="pdf" viewBox="0 0 20 20"><path d="M5 2.5h7l3.5 3.5v11.5H5z" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/><path d="M12 2.5V6h3.5" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/><text x="10.2" y="14" font-family="Arial, sans-serif" font-size="4.2" font-weight="700" text-anchor="middle" fill="currentColor">PDF</text></symbol>
+  <symbol id="cite" viewBox="0 0 20 20"><path d="M6 12c0-3 1.5-5 4-5M6 12v3H3v-3M6 12c0-1.5 1-2.5 2.5-2.5M14 12c0-3 1.5-5 4-5M14 12v3h-3v-3M14 12c0-1.5 1-2.5 2.5-2.5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand to-top" href="#" aria-label="Scroll to top">Hugo Romat</a>
+    <nav class="topnav" aria-label="Sections">
+      <a href="#journey">Journey</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Publications</a>
+    </nav>
+  </div>
+</header>
+
+<main class="content">
+
+  <section id="about" class="hero">
+    <div class="wrap">
+      <div class="hero-row">
+        <a class="hero-portrait to-top" href="#" aria-label="Scroll to top">
+          <img src="assets/hugo-400.jpg" width="400" height="400" fetchpriority="high" alt="Hugo Romat, Microsoft Research engineer inventing new mediums for the age of AI" />
+        </a>
+        <div>
+          <p class="eyebrow">Inventor &middot; Engineer &middot; Researcher</p>
+          <h1 class="hero-title">Hugo Romat</h1>
+          <p class="hero-role">Senior Research Engineer, Ph.D. &middot; Microsoft Research (EPIC), Seattle</p>
+        </div>
+      </div>
+      <p class="hero-lede">I invent and engineer <strong>new mediums for the age of AI</strong>: places where people and AI <strong>collaborate, reason, discover, and create</strong> together. I work hands-on across generative AI models, real-time interfaces, and the infrastructure that connects them, turning research ideas into working systems. I take my ideas from early prototypes to features shipped in Microsoft products like Copilot, OneNote, and Xbox. I&rsquo;m passionate about building the future: making bold ideas real enough to experience, then using what we learn to shape research and products.</p>
+      <div class="chips">
+        <a class="chip" href="mailto:romathugo@microsoft.com">Email</a>
+        <a class="chip" href="https://scholar.google.com/citations?user=OaWHvB8AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="chip" href="https://dblp.org/pid/177/8707.html" target="_blank" rel="noopener">DBLP</a>
+        <a class="chip" href="https://dl.acm.org/profile/99658993819" target="_blank" rel="noopener">ACM</a>
+        <a class="chip" href="https://www.linkedin.com/in/hugo-romat-3a64b188/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="band band-white">
+    <div class="wrap showreel-row">
+      <div class="showreel-text">
+        <p class="eyebrow">Showreel</p>
+        <h2 class="section">What if&hellip;</h2>
+        <p class="section-lede">My current projects explore possible futures for generative AI: interfaces that come alive, respond, and evolve in real time.</p>
+        <p class="section-lede">Each prototype asks what happens when generated content stays live: something you can touch, steer, and reshape as you go, instead of a one-shot answer. Many of these ideas became papers at CHI and UIST, and some found their way into products.</p>
+      </div>
+      <figure class="showreel">
+        <video controls playsinline preload="metadata" poster="assets/media/showreel-cover.jpg" aria-label="What if... a showreel of interactive generative AI prototypes">
+          <source src="assets/media/showreel.mp4" type="video/mp4" />
+        </video>
+      </figure>
+    </div>
+  </section>
+
+  <section id="journey" class="band band-gray">
+    <div class="wrap">
+      <p class="eyebrow">Research areas</p>
+      <h2 class="section">Journey</h2>
+      <p class="section-lede">Making content respond to people: first data, then ink, now generative AI.</p>
+
+      <!-- 01 · Generative AI -->
+      <article class="area" id="area-ai">
+        <header class="area-head">
+          <span class="area-num" aria-hidden="true">01</span>
+          <div class="area-head-text">
+            <p class="area-kicker">2023 &mdash; today</p>
+            <h3 class="area-title">Media that come alive</h3>
+            <p class="area-sub">Generative AI as an interactive, living medium.</p>
+            <p class="area-tags"><span class="tag">Generative UI</span><span class="tag">Interactive diffusion</span><span class="tag">Spatial prompting</span><span class="tag">Generative AR</span><span class="tag">Vibe gaming</span></p>
+          </div>
+        </header>
+
+        <div class="area-cols">
+          <div class="area-card">
+            <h4 class="area-h">Why it matters</h4>
+            <p>Chat unlocked the first wave of AI adoption. But a text box is a narrow window onto models that can now generate images, video, interfaces, and entire worlds. The next wave will come from mediums people can touch, steer, and reshape continuously. When AI becomes interactive, more people can use it, for more of their work, and with real control over the result.</p>
+          </div>
+          <div class="area-card">
+            <h4 class="area-h">Impact &amp; influential work</h4>
+            <p class="impact-lead">I push AI beyond the chat box, toward generated content you can touch, steer, and reshape. I proved it in research, with three CHI and UIST Honorable Mentions, eight patent filings, and live demos to Microsoft leadership. I proved it in product too, leading image generation in the Copilot app, the generative pipeline behind Xbox Design Lab controllers, and image understanding in Copilot.</p>
+          </div>
+        </div>
+
+        <div class="media-strip">
+          <figure><img src="assets/media/msrepic-vibegaming-summer2025-preview.gif" alt="Vibe gaming: a game world that follows the player's imagination" decoding="async" /><figcaption>Vibe gaming, shown at the Research Showcase</figcaption></figure>
+          <figure><img src="assets/media/msrepic-texterial-spring2025-preview.gif" alt="Texterial: shaping text like a material with gestures" decoding="async" /><figcaption>Texterial: text as a material you shape</figcaption></figure>
+          <figure><img src="assets/media/msrepic-aiinstruments-chi2025-preview.gif" alt="AI-Instruments: a generative container filling with art-style variations" decoding="async" /><figcaption>AI-Instruments: prompts become tools</figcaption></figure>
+        </div>
+
+        <div class="area-cols">
+          <div class="area-card">
+            <h4 class="area-h">Key papers</h4>
+            <ul class="key-papers">
+              <li><a href="#pub-marquardtrrpprd25">ImaginationVellum</a><span class="kp-venue">UIST 2025 <span class="kp-award">&#9733; Honorable Mention</span></span><p>An ideation canvas where spatial layout, generative strokes, and history become the prompt.</p></li>
+              <li><a href="#pub-richeogbrpmih25">AI-Instruments</a><span class="kp-venue">CHI 2025 <span class="kp-award">&#9733; Honorable Mention</span></span><p>Prompts become reusable instruments you apply directly to content, like tools.</p></li>
+              <li><a href="#pub-shenmrhrc26">Texterial</a><span class="kp-venue">CHI 2026 <span class="kp-award">&#9733; Honorable Mention</span></span><p>Text as a material you shape with gestures, with an LLM in the loop.</p></li>
+              <li><a href="#pub-gmeinermbrpbrmh25">Intent Tagging</a><span class="kp-venue">CHI 2025</span><p>Micro-prompts attached to parts of a work to steer generation precisely.</p></li>
+              <li><a href="#pub-shen2026live">Live Artifacts</a><span class="kp-venue">2026</span><p>Dynamic media built from live layers that keep their generative specification.</p></li>
+              <li><a href="#pub-ning2026brushing">Brushing &amp; Interpretive Linking</a><span class="kp-venue">GI 2026</span><p>Brushing and linking, reinvented for knowledge work with LLMs.</p></li>
+            </ul>
+          </div>
+          <div class="area-card">
+            <h4 class="area-h">Product impact</h4>
+            <ul class="impact-list">
+              <li><strong>Copilot &middot; Drawing in the Copilot app</strong><p>Principal investigator for image generation in the Copilot app. I drove the Stable Diffusion technology end to end, ramped up the engineering team, and led responsible-AI communication for sketch-to-image.</p></li>
+              <li><strong>Microsoft Paint &middot; Cocreator</strong><p>Shaped the live AI sketching canvas that turns scribbles into art in Paint.</p></li>
+              <li><strong>Copilot &middot; Image understanding</strong><p>Led the analysis of how people use image input in Copilot, and shipped a small vision-language model to analyze images and suggest actions.</p></li>
+              <li><strong>Copilot &middot; Computer-using agent</strong><p>Built a computer-using agent that runs in a custom Linux container, and took it from leadership demo to product.</p></li>
+              <li><strong>Copilot Notebooks</strong><p>Our hackathon with the Loop design team, on creating pages from existing assets and AI summaries, shaped Copilot Notebooks.</p></li>
+              <li><strong>Xbox &middot; Design Lab</strong><p>Principal investigator of the generative image pipeline that lets people design custom Xbox controllers.</p></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="area-card">
+          <h4 class="area-h">Talks, demos &amp; showcases</h4>
+          <ul class="talks">
+            <li><span class="t-year">2026</span><span><strong>MLADS</strong> &middot; Generative UI and the next interactive AI experiences</span></li>
+            <li><span class="t-year">2026</span><span><strong>UX for Generative AI conference</strong> &middot; Making AI interactive</span></li>
+            <li><span class="t-year">2025</span><span><strong>Microsoft Research Showcase</strong> &middot; Vibe Gaming, plus an 8-person hackathon on generative games presented to Xbox leadership</span></li>
+            <li><span class="t-year">2025</span><span><strong>Microsoft Research Fair</strong> &middot; ImaginationVellum, with private demos to Office AI and Gaming AI leaders</span></li>
+            <li><span class="t-year">2024</span><span><strong>Research Demo Fair</strong> &middot; Intent Tagging and micro-prompting with Copilot</span></li>
+            <li><span class="t-year">2024</span><span><strong>New Future of Work report</strong> &middot; AI-Instruments, Intent Tagging, and the intelligent canvas featured</span></li>
+            <li><span class="t-year">2025&ndash;26</span><span><strong>Organizer</strong> &middot; Generative UI workshop (Project Green) and the GUIDE Forum</span></li>
+          </ul>
+        </div>
+
+        <div class="future" hidden>
+          <h4 class="area-h">Building the future</h4>
+          <p class="future-lede">Five directions I&rsquo;m building toward. Explore them in <a href="#projects">What if&hellip;</a></p>
+          <div class="future-grid">
+            <div class="future-item"><h5>Pixel UI</h5><p>Interfaces become generated, adaptive, and infinitely malleable. Every pixel can respond.</p></div>
+            <div class="future-item"><h5>Kinetic Diffusion</h5><p>Media becomes something you shape, not just consume. Artifacts stay alive and explorable.</p></div>
+            <div class="future-item"><h5>Flowing Diffusion</h5><p>Creation keeps pace with human intent. Interfaces emerge and evolve alongside thought.</p></div>
+            <div class="future-item"><h5>Flux Diffusion</h5><p>Reality becomes an editable canvas. Generative AI transforms the physical world in real time.</p></div>
+            <div class="future-item"><h5>Coalescence</h5><p>Intelligence becomes a place, not a tool. Agents, people, and artifacts share a living workspace.</p></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 · Ink -->
+      <article class="area" id="area-ink">
+        <header class="area-head">
+          <span class="area-num" aria-hidden="true">02</span>
+          <div class="area-head-text">
+            <p class="area-kicker">2019 &mdash; 2025</p>
+            <h3 class="area-title">Ink &amp; new input</h3>
+            <p class="area-sub">Pen, touch, and devices that bring interaction closer to thought.</p>
+            <p class="area-tags"><span class="tag">Digital ink</span><span class="tag">Pen + touch</span><span class="tag">Handwriting AI</span><span class="tag">Cross-device</span><span class="tag">Accessibility</span></p>
+          </div>
+        </header>
+
+        <div class="area-cols">
+          <div class="area-card">
+            <h4 class="area-h">Why it matters</h4>
+            <p>Ink is the fastest way to get a thought out of your head: no menus, no syntax. Yet digital ink has mostly stayed as static marks on a page. Making ink understood, legible, and generative turns the pen into a first-class way to work with data and AI, and opens it to people with motor impairments or who never learned to draw.</p>
+          </div>
+          <div class="area-card">
+            <h4 class="area-h">Impact &amp; influential work</h4>
+            <p class="impact-lead">I made the case that ink should be a first-class input for AI, not a static mark on a page. My research, including a CHI Honorable Mention and work at CHI, UIST, and IEEE VR, defined how ink can act on data, reshape documents, and travel across devices.</p>
+            <p>On Microsoft&rsquo;s Pen &amp; Ink team I was the bridge from research to product. I led the prototypes that brought ink and AI into OneNote, Loop, and Copilot, which led to ink straightening and sketch-to-image in OneNote, a winning Office AI hackathon, and an ink canvas in Loop. Along the way I mentored Microsoft Research interns on cross-device and pen interaction.</p>
+          </div>
+        </div>
+
+        <div class="media-strip">
+          <figure><img src="assets/media/romat-activeink-chi2019-preview.gif" alt="ActiveInk: annotating a data visualization with a pen" decoding="async" /><figcaption>ActiveInk: thinking with data, in ink</figcaption></figure>
+          <figure><img src="assets/media/romat-spaceink-uist2019-preview.gif" alt="SpaceInk: document content reflowing to make space for handwritten notes" decoding="async" /><figcaption>SpaceInk: documents make room for your notes</figcaption></figure>
+          <figure><img src="assets/media/romat-flashpen-tvcg2021-preview.gif" alt="Flashpen: a high-precision pen for virtual reality" decoding="async" /><figcaption>Flashpen: precise inking in VR</figcaption></figure>
+        </div>
+
+        <div class="area-cols">
+          <div class="area-card">
+            <h4 class="area-h">Key papers</h4>
+            <ul class="key-papers">
+              <li><a href="#pub-romatrhlapc19">ActiveInk</a><span class="kp-venue">CHI 2019 <span class="kp-award">&#9733; Honorable Mention</span></span><p>Ink annotations that act on the data they mark, for active reading of visualizations.</p></li>
+              <li><a href="#pub-romatprha19">SpaceInk</a><span class="kp-venue">UIST 2019</span><p>Document content reflows to make space for in-context handwritten annotations.</p></li>
+              <li><a href="#pub-romat0rp0rbh20">Tilt-Responsive Techniques</a><span class="kp-venue">UIST 2020</span><p>Digital drawing boards that adapt tools and content to how they are tilted.</p></li>
+              <li><a href="#pub-romatmhr22">Style Blink</a><span class="kp-venue">CHI 2022</span><p>Handcrafted styling as a first-class object for structured ink, like journaling.</p></li>
+              <li><a href="#pub-romatfm021a">Flashpen</a><span class="kp-venue">IEEE VR 2021</span><p>A high-fidelity, high-precision multi-surface pen for virtual reality.</p></li>
+              <li><a href="#pub-marquardtr0rpbl21">AirConstellations</a><span class="kp-venue">UIST 2021</span><p>In-air device formations for cross-device interaction and collaboration.</p></li>
+              <li><a href="#pub-strelijfmr022">TapType</a><span class="kp-venue">CHI 2022</span><p>Ten-finger typing on everyday surfaces, decoded with Bayesian inference.</p></li>
+            </ul>
+          </div>
+          <div class="area-card">
+            <h4 class="area-h">Product impact</h4>
+            <ul class="impact-list">
+              <li><strong>OneNote &middot; Ink straightening</strong><p>Designed and implemented the straightening algorithms that make handwriting more legible, shipped them in the OneNote codebase, and led the end-to-end evaluation through rollout.</p></li>
+              <li><strong>OneNote &middot; Sketch to image</strong><p>Turned our prototypes into sketch-to-image on the OneNote canvas with the Pen &amp; Ink incubation team.</p></li>
+              <li><strong>Loop &middot; Ink as a first-class citizen</strong><p>1st place in the Office AI hackathon (2025): ink on the lock screen, in Loop, and in Copilot chat. The product team then started building an ink canvas into Loop.</p></li>
+              <li><strong>Office &middot; Sketch beautification</strong><p>Led a top-three hackathon project (2024) on beautifying sketches, picked up as a new experience across Office apps.</p></li>
+              <li><strong>Generative ink &amp; handwriting legibility</strong><p>Tech lead on handwriting generation, and on new ML approaches that segment ascenders, descenders, and baselines to make ink more legible and accessible.</p></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 · Data -->
+      <article class="area" id="area-data">
+        <header class="area-head">
+          <span class="area-num" aria-hidden="true">03</span>
+          <div class="area-head-text">
+            <p class="area-kicker">2016 &mdash; 2020</p>
+            <h3 class="area-title">Data that responds</h3>
+            <p class="area-sub">Expressive, interactive visualization for sensemaking.</p>
+            <p class="area-tags"><span class="tag">Information visualization</span><span class="tag">Graph drawing</span><span class="tag">Animation</span><span class="tag">Pictographs</span><span class="tag">Data comics</span></p>
+          </div>
+        </header>
+
+        <div class="area-cols">
+          <div class="area-card">
+            <h4 class="area-h">Why it matters</h4>
+            <p>Data only matters if people can see it, question it, and tell its story. During my Ph.D. at Inria, and in collaboration with Microsoft Research, I designed systems where visual representations are authored and shaped directly, rather than configured through menus. That idea, content you shape by hand, is the seed of everything I&rsquo;ve built since.</p>
+          </div>
+          <div class="area-card">
+            <h4 class="area-h">Impact &amp; influential work</h4>
+            <p class="impact-lead">My Ph.D. challenged the default look of network visualizations: plain circles, lines, and static edges. I showed that expressive, animated visuals can encode more data and engage readers. This work won the INTERACT 2019 Best Doctoral Student Paper award and appeared at CHI and IEEE TVCG, and my collaborations earned a CHI Best Paper.</p>
+            <p>The idea came full circle with generative AI. I turned charts into constraints for image generation, which became the AI infographics pipeline in Microsoft Designer, and I launched a joint internship bringing data comics to Microsoft Security.</p>
+          </div>
+        </div>
+
+        <div class="media-strip">
+          <figure><img src="assets/media/romat-graphies-tvcg2021-preview.gif" alt="Graphies: expressive node-link diagrams authored directly" decoding="async" /><figcaption>Graphies: expressive node-link diagrams</figcaption></figure>
+          <figure><img src="assets/media/romat-animatededges-chi2018-preview.gif" alt="Animated particles encoding data along graph edges" decoding="async" /><figcaption>Animated particles that encode data</figcaption></figure>
+          <figure><img src="assets/media/msrepic-visdesigner-spring2024-preview.gif" alt="Data-driven image generation: charts turned into imagery" decoding="async" /><figcaption>Full circle: data-driven image generation</figcaption></figure>
+        </div>
+
+        <div class="area-cols">
+          <div class="area-card">
+            <h4 class="area-h">Key papers</h4>
+            <ul class="key-papers">
+              <li><a href="#pub-romatap21">Graphies</a><span class="kp-venue">IEEE TVCG 2021</span><p>Expressive authoring of node-link diagrams, beyond default circles and lines.</p></li>
+              <li><a href="#pub-romatabrp18">Animated Edge Textures</a><span class="kp-venue">CHI 2018</span><p>A design space for animating edges to encode data in network visualizations.</p></li>
+              <li><a href="#pub-romatlpa19">Particle Speed Perception</a><span class="kp-venue">INTERACT 2019 <span class="kp-award">&#9733; Best Doctoral Student Paper</span></span><p>How color and size change the perceived speed of animated particles.</p></li>
+              <li><a href="#pub-romatrhdah20">Dear Pictograph</a><span class="kp-venue">CHI 2020</span><p>Personalization and immersion for consuming and enjoying visualizations.</p></li>
+              <li><a href="#pub-zhengcrrbchm21">Sketchnote Strategies</a><span class="kp-venue">CHI 2021 <span class="kp-award">&#9733; Best Paper</span></span><p>Components, dimensions, and strategies for effective visual note taking.</p></li>
+              <li><a href="#pub-wangrcrmb22">Interactive Data Comics</a><span class="kp-venue">IEEE TVCG 2022</span><p>Comics that let readers interact with the data behind the story.</p></li>
+            </ul>
+          </div>
+          <div class="area-card">
+            <h4 class="area-h">Product impact</h4>
+            <ul class="impact-list">
+              <li><strong>Microsoft Designer &middot; AI infographics</strong><p>Invented using a chart&rsquo;s depth map to constrain image generation, and prototyped it on our Stable Diffusion + ControlNet pipeline. It drove a hackathon with the Designer team and became the SDXL pipeline for AI infographics.</p></li>
+              <li><strong>Microsoft Security &middot; Data comics</strong><p>Launched a joint internship with Microsoft Security that tells the story of security incidents through data comics.</p></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="recognition" class="band band-gray">
+    <div class="wrap">
+      <p class="eyebrow">Awards &amp; service</p>
+      <h2 class="section">Recognition</h2>
+      <div class="rec-grid">
+        <div class="rec-card">
+          <h3>Paper awards</h3>
+          <ul>
+            <li><a href="#pub-shenmrhrc26">Texterial</a> &middot; CHI 2026 Honorable Mention</li>
+            <li><a href="#pub-marquardtrrpprd25">ImaginationVellum</a> &middot; UIST 2025 Honorable Mention</li>
+            <li><a href="#pub-richeogbrpmih25">AI-Instruments</a> &middot; CHI 2025 Honorable Mention</li>
+            <li><a href="#pub-zhengcrrbchm21">Sketchnote Strategies</a> &middot; CHI 2021 Best Paper</li>
+            <li><a href="#pub-romatlpa19">Particle Speed Perception</a> &middot; INTERACT 2019 Best Doctoral Student Paper</li>
+            <li><a href="#pub-romatrhlapc19">ActiveInk</a> &middot; CHI 2019 Honorable Mention</li>
+          </ul>
+        </div>
+        <div class="rec-card">
+          <h3>Patents &amp; hackathons</h3>
+          <ul>
+            <li><strong>9 patents</strong> on generative interaction, spatial prompting, digital materials, intent tags, and ink</li>
+            <li><strong>1st place</strong>, Office AI hackathon 2025 &middot; Ink as a first-class citizen</li>
+            <li><strong>Top 3</strong>, organization hackathon 2024 &middot; Sketch beautification</li>
+          </ul>
+        </div>
+        <div class="rec-card">
+          <h3>Mentoring</h3>
+          <ul>
+            <li>Mentored <strong>10+ research interns</strong> at Microsoft Research, leading to papers at CHI, UIST, and GI</li>
+            <li>Mentored a Vibe Gaming intern to an MSR fellowship on collaborative generative UI, with MSR Cambridge</li>
+            <li>Launched joint internships between Microsoft Research and product teams</li>
+          </ul>
+        </div>
+        <div class="rec-card">
+          <h3>Service</h3>
+          <ul>
+            <li>Reviewer for CHI, UIST, DIS, and ICDAR</li>
+            <li>Organizer, &ldquo;AI Manifestations in User Experiences&rdquo; workshop</li>
+            <li>Organizer, Generative UI workshop and GUIDE Forum (2025, 2026)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="band band-white">
+    <div class="wrap">
+      <p class="eyebrow">Career</p>
+      <h2 class="section">Experience</h2>
+      <div class="xp-list">
+        <div class="xp">
+          <div class="xp-logo"><img src="assets/logos/msft_logo.png" alt="Microsoft Research" /></div>
+          <div class="xp-body">
+            <div class="xp-head">
+              <div>
+                <p class="xp-role">Senior Research Engineer</p>
+                <p class="xp-org">Microsoft Research, EPIC <span class="place">&middot; Seattle</span></p>
+              </div>
+            </div>
+            <p class="xp-note">Building the foundations for AI-native experiences: generative UI, real-time image generation, and the shared platform behind the team&rsquo;s prototypes.</p>
+          </div>
+        </div>
+        <div class="xp">
+          <div class="xp-logo"><img src="assets/logos/msft_logo.png" alt="Microsoft" /></div>
+          <div class="xp-body">
+            <div class="xp-head">
+              <div>
+                <p class="xp-role">Senior Applied Scientist</p>
+                <p class="xp-org">Microsoft, Pen &amp; Ink team (Experiences &amp; Devices) <span class="place">&middot; Seattle</span></p>
+              </div>
+            </div>
+            <p class="xp-note">Bridged Microsoft Research and product, bringing ink and generative AI into OneNote, Copilot, and Paint.</p>
+          </div>
+        </div>
+        <div class="xp">
+          <div class="xp-logo"><img src="assets/logos/eth2_logo.png" alt="ETH Zurich" /></div>
+          <div class="xp-body">
+            <div class="xp-head">
+              <div>
+                <p class="xp-role">Postdoctoral Researcher</p>
+                <p class="xp-org">ETH Zurich, SIP Lab <span class="place">&middot; Zurich</span></p>
+              </div>
+            </div>
+            <p class="xp-note">Sensing and input for mixed reality and mobile: Flashpen and TapType.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="band band-gray">
+    <div class="wrap">
+      <p class="eyebrow">Research</p>
+      <h2 class="section">Publications</h2>
+
+      <p class="pub-intro">My peer-reviewed research spans Generative AI, Human-Computer Interaction (HCI), Human-AI Interaction, interactive data visualization, and novel input techniques. The publications below are drawn from my <a href="https://dblp.org/pid/177/8707.html" target="_blank" rel="noopener">DBLP</a> record (see also <a href="https://scholar.google.com/citations?user=OaWHvB8AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>). Expand any entry to copy its BibTeX citation.</p>
+      <h3 class="pub-year"><span class="y">2026</span><span class="ln"></span></h3>
+<ol class="pub-list">
+<li class="pub" id="pub-shen2026live">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/shen2026live.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.48550/arXiv.2608.20880" target="_blank" rel="noopener">Live Artifacts: Authoring Dynamic Media via Live Layers Encapsulating Generative Specifications</a></h3>
+    <p class="pub-authors"><span class="au">Leixian Shen</span>, <span class="au">Haotian Li</span>, <span class="au me">Hugo Romat</span>, <span class="au">Fanny Chevalier</span>, <span class="au">Nicolai Marquardt</span>, <span class="au">Nathalie Riche</span></p>
+    <p class="pub-venue"><em>arXiv preprint 2026</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.48550/arXiv.2608.20880" target="_blank" rel="noopener"><svg><use href="#arxiv"/></svg>arXiv</a><a href="assets/pdfs/shen2026live.pdf" target="_blank" rel="noopener" aria-label="PDF: Live Artifacts: Authoring Dynamic Media via Live Layers Encapsulating Generative Specifications"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@article{shen2026live,
+  author    = {Leixian Shen and Haotian Li and Hugo Romat and Fanny Chevalier and Nicolai Marquardt and Nathalie Riche},
+  title     = {{Live Artifacts: Authoring Dynamic Media via Live Layers Encapsulating Generative Specifications}},
+  journal   = {arXiv preprint arXiv:2608.20880},
+  year      = {2026},
+  doi       = {10.48550/arXiv.2608.20880},
+  url       = {https://doi.org/10.48550/arXiv.2608.20880}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-ning2026brushing">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/ning2026brushing.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="#" target="_blank" rel="noopener">Brushing and Interpretive Linking for Knowledge Work</a></h3>
+    <p class="pub-authors"><span class="au">Zheng Ning</span>, <span class="au">Michel Pahud</span>, <span class="au me">Hugo Romat</span>, <span class="au">Nicolai Marquardt</span>, <span class="au">Fanny Chevalier</span>, <span class="au">Jeevana Priya Inala</span>, <span class="au">Chenglong Wang</span>, <span class="au">David Brown</span>, <span class="au">Toby Jia-Jun Li</span>, <span class="au">Ken Hinckley</span>, <span class="au">Nathalie Riche</span></p>
+    <p class="pub-venue"><em>GI 2026</em></p>
+    <div class="pub-icons"><a href="assets/pdfs/ning2026brushing.pdf" target="_blank" rel="noopener" aria-label="PDF: Brushing and Interpretive Linking for Knowledge Work"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{ning2026brushing,
+  author    = {Zheng Ning and Michel Pahud and Hugo Romat and Nicolai Marquardt and Fanny Chevalier and Jeevana Priya Inala and Chenglong Wang and David Brown and Toby Jia-Jun Li and Ken Hinckley and Nathalie Riche},
+  title     = {{Brushing and Interpretive Linking for Knowledge Work}},
+  booktitle = {Proceedings of Graphics Interface},
+  year      = {2026},
+  url       = {}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-shenmrhrc26">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/shenmrhrc26.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3772318.3790330" target="_blank" rel="noopener">Texterial: A Text-as-Material Interaction Paradigm for LLM-Mediated Writing</a></h3>
+    <p class="pub-authors"><span class="au">Jocelyn J. Shen</span>, <span class="au">Nicolai Marquardt</span>, <span class="au me">Hugo Romat</span>, <span class="au">Ken Hinckley</span>, <span class="au">Nathalie Riche</span>, <span class="au">Fanny Chevalier</span></p>
+    <p class="pub-venue"><em>ACM CHI 2026</em> <span class="award">Honorable Mention</span></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3772318.3790330" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="https://doi.org/10.48550/arXiv.2603.00452" target="_blank" rel="noopener"><svg><use href="#arxiv"/></svg>arXiv</a><a href="assets/pdfs/shenmrhrc26.pdf" target="_blank" rel="noopener" aria-label="PDF: Texterial: A Text-as-Material Interaction Paradigm for LLM-Mediated Writing"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{shen2026texterial,
+  author    = {Jocelyn J. Shen and Nicolai Marquardt and Hugo Romat and Ken Hinckley and Nathalie Riche and Fanny Chevalier},
+  title     = {{Texterial: A Text-as-Material Interaction Paradigm for LLM-Mediated Writing}},
+  booktitle = {Proceedings of the CHI Conference on Human Factors in Computing Systems},
+  year      = {2026},
+  doi       = {10.1145/3772318.3790330},
+  url       = {https://doi.org/10.1145/3772318.3790330}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+</ol>
+<h3 class="pub-year"><span class="y">2025</span><span class="ln"></span></h3>
+<ol class="pub-list">
+<li class="pub" id="pub-gmeinermbrpbrmh25">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/gmeinermbrpbrmh25.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3706598.3713861" target="_blank" rel="noopener">Intent Tagging: Exploring Micro-Prompting Interactions for Supporting Granular Human-GenAI Co-Creation Workflows</a></h3>
+    <p class="pub-authors"><span class="au">Frederic Gmeiner</span>, <span class="au">Nicolai Marquardt</span>, <span class="au">Michael Bentley</span>, <span class="au me">Hugo Romat</span>, <span class="au">Michel Pahud</span>, <span class="au">David Brown</span>, <span class="au">Asta Roseway</span>, <span class="au">Nikolas Martelaro</span>, <span class="au">Kenneth Holstein</span>, <span class="au">Ken Hinckley</span>, <span class="au">Nathalie Riche</span></p>
+    <p class="pub-venue"><em>ACM CHI 2025</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3706598.3713861" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="https://doi.org/10.48550/arXiv.2502.18737" target="_blank" rel="noopener"><svg><use href="#arxiv"/></svg>arXiv</a><a href="assets/pdfs/gmeinermbrpbrmh25.pdf" target="_blank" rel="noopener" aria-label="PDF: Intent Tagging: Exploring Micro-Prompting Interactions for Supporting Granular Human-GenAI Co-Creation Workflows"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{gmeiner2025intent,
+  author    = {Frederic Gmeiner and Nicolai Marquardt and Michael Bentley and Hugo Romat and Michel Pahud and David Brown and Asta Roseway and Nikolas Martelaro and Kenneth Holstein and Ken Hinckley and Nathalie Riche},
+  title     = {{Intent Tagging: Exploring Micro-Prompting Interactions for Supporting Granular Human-GenAI Co-Creation Workflows}},
+  booktitle = {Proceedings of the CHI Conference on Human Factors in Computing Systems},
+  year      = {2025},
+  doi       = {10.1145/3706598.3713861},
+  url       = {https://doi.org/10.1145/3706598.3713861}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-marquardtrrpprd25">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/marquardtrrpprd25.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3746059.3747631" target="_blank" rel="noopener">ImaginationVellum: Generative-AI Ideation Canvas with Spatial Prompts, Generative Strokes, and Ideation History</a></h3>
+    <p class="pub-authors"><span class="au">Nicolai Marquardt</span>, <span class="au">Asta Roseway</span>, <span class="au me">Hugo Romat</span>, <span class="au">Payod Panda</span>, <span class="au">Michel Pahud</span>, <span class="au">Gonzalo A. Ramos</span>, <span class="au">Steven Mark Drucker</span>, <span class="au">Andrew D. Wilson</span>, <span class="au">Ken Hinckley</span>, <span class="au">Nathalie Riche</span></p>
+    <p class="pub-venue"><em>ACM UIST 2025</em> <span class="award">Honorable Mention</span></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3746059.3747631" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="assets/pdfs/marquardtrrpprd25.pdf" target="_blank" rel="noopener" aria-label="PDF: ImaginationVellum: Generative-AI Ideation Canvas with Spatial Prompts, Generative Strokes, and Ideation History"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{marquardt2025imaginationvellum,
+  author    = {Nicolai Marquardt and Asta Roseway and Hugo Romat and Payod Panda and Michel Pahud and Gonzalo A. Ramos and Steven Mark Drucker and Andrew D. Wilson and Ken Hinckley and Nathalie Riche},
+  title     = {{ImaginationVellum: Generative-AI Ideation Canvas with Spatial Prompts, Generative Strokes, and Ideation History}},
+  booktitle = {Proceedings of the ACM Symposium on User Interface Software and Technology},
+  year      = {2025},
+  doi       = {10.1145/3746059.3747631},
+  url       = {https://doi.org/10.1145/3746059.3747631}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-richeogbrpmih25">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/richeogbrpmih25.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3706598.3714259" target="_blank" rel="noopener">AI-Instruments: Embodying Prompts as Instruments to Abstract &amp; Reflect Graphical Interface Commands as General-Purpose Tools</a></h3>
+    <p class="pub-authors"><span class="au">Nathalie Riche</span>, <span class="au">Anna Offenwanger</span>, <span class="au">Frederic Gmeiner</span>, <span class="au">David Brown</span>, <span class="au me">Hugo Romat</span>, <span class="au">Michel Pahud</span>, <span class="au">Nicolai Marquardt</span>, <span class="au">Kori Inkpen</span>, <span class="au">Ken Hinckley</span></p>
+    <p class="pub-venue"><em>ACM CHI 2025</em> <span class="award">Honorable Mention</span></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3706598.3714259" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="https://doi.org/10.48550/arXiv.2502.18736" target="_blank" rel="noopener"><svg><use href="#arxiv"/></svg>arXiv</a><a href="assets/pdfs/richeogbrpmih25.pdf" target="_blank" rel="noopener" aria-label="PDF: AI-Instruments: Embodying Prompts as Instruments to Abstract &amp; Reflect Graphical Interface Commands as General-Purpose Tools"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{riche2025aiinstruments,
+  author    = {Nathalie Riche and Anna Offenwanger and Frederic Gmeiner and David Brown and Hugo Romat and Michel Pahud and Nicolai Marquardt and Kori Inkpen and Ken Hinckley},
+  title     = {{AI-Instruments: Embodying Prompts as Instruments to Abstract &amp; Reflect Graphical Interface Commands as General-Purpose Tools}},
+  booktitle = {Proceedings of the CHI Conference on Human Factors in Computing Systems},
+  year      = {2025},
+  doi       = {10.1145/3706598.3714259},
+  url       = {https://doi.org/10.1145/3706598.3714259}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+</ol>
+<h3 class="pub-year"><span class="y">2024</span><span class="ln"></span></h3>
+<ol class="pub-list">
+<li class="pub" id="pub-joshillppslrbmh24">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/joshillppslrbmh24.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3613905.3651037" target="_blank" rel="noopener">Opportunistic Nudges for Task Migration Between Personal Devices</a></h3>
+    <p class="pub-authors"><span class="au">Nikhita Joshi</span>, <span class="au">Richard Li</span>, <span class="au">Jiannan Li</span>, <span class="au">Leonardo Pavanatto</span>, <span class="au">Michel Pahud</span>, <span class="au">Jatin Sharma</span>, <span class="au">Bongshin Lee</span>, <span class="au me">Hugo Romat</span>, <span class="au">William Buxton</span>, <span class="au">Nicolai Marquardt</span>, <span class="au">Ken Hinckley</span>, <span class="au">Nathalie Henry Riche</span></p>
+    <p class="pub-venue"><em>ACM CHI Extended Abstracts 2024</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3613905.3651037" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="assets/pdfs/joshillppslrbmh24.pdf" target="_blank" rel="noopener" aria-label="PDF: Opportunistic Nudges for Task Migration Between Personal Devices"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{joshi2024opportunistic,
+  author    = {Nikhita Joshi and Richard Li and Jiannan Li and Leonardo Pavanatto and Michel Pahud and Jatin Sharma and Bongshin Lee and Hugo Romat and William Buxton and Nicolai Marquardt and Ken Hinckley and Nathalie Henry Riche},
+  title     = {{Opportunistic Nudges for Task Migration Between Personal Devices}},
+  booktitle = {Extended Abstracts of the CHI Conference on Human Factors in Computing Systems},
+  year      = {2024},
+  doi       = {10.1145/3613905.3651037},
+  url       = {https://doi.org/10.1145/3613905.3651037}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-hurterrtargar24">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/hurterrtargar24.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1109/TVCG.2023.3336588" target="_blank" rel="noopener">Memory Recall for Data Visualizations in Mixed Reality, Virtual Reality, 3D and 2D</a></h3>
+    <p class="pub-authors"><span class="au">Christophe Hurter</span>, <span class="au">Bernice E. Rogowitz</span>, <span class="au">Guillaume Truong</span>, <span class="au">Tiffany Andry</span>, <span class="au me">Hugo Romat</span>, <span class="au">Ludovic Gardy</span>, <span class="au">Fereshteh Amini</span>, <span class="au">Nathalie Henry Riche</span></p>
+    <p class="pub-venue"><em>IEEE TVCG 2024</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1109/TVCG.2023.3336588" target="_blank" rel="noopener"><svg><use href="#doi"/></svg>DOI</a><a href="assets/pdfs/hurterrtargar24.pdf" target="_blank" rel="noopener" aria-label="PDF: Memory Recall for Data Visualizations in Mixed Reality, Virtual Reality, 3D and 2D"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@article{hurter2024memory,
+  author    = {Christophe Hurter and Bernice E. Rogowitz and Guillaume Truong and Tiffany Andry and Hugo Romat and Ludovic Gardy and Fereshteh Amini and Nathalie Henry Riche},
+  title     = {{Memory Recall for Data Visualizations in Mixed Reality, Virtual Reality, 3D and 2D}},
+  journal   = {IEEE Transactions on Visualization and Computer Graphics},
+  year      = {2024},
+  doi       = {10.1109/TVCG.2023.3336588},
+  url       = {https://doi.org/10.1109/TVCG.2023.3336588}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+</ol>
+<h3 class="pub-year"><span class="y">2023</span><span class="ln"></span></h3>
+<ol class="pub-list">
+<li class="pub" id="pub-nicholasmprr0lk23">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/nicholasmprr0lk23.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3544548.3581115" target="_blank" rel="noopener">Escapement: A Tool for Interactive Prototyping with Video via Sensor-Mediated Abstraction of Time</a></h3>
+    <p class="pub-authors"><span class="au">Molly Jane Nicholas</span>, <span class="au">Nicolai Marquardt</span>, <span class="au">Michel Pahud</span>, <span class="au">Nathalie Riche</span>, <span class="au me">Hugo Romat</span>, <span class="au">Christopher Collins</span>, <span class="au">David Ledo</span>, <span class="au">Rohan Kadekodi</span>, <span class="au">Badrish Chandramouli</span>, <span class="au">Ken Hinckley</span></p>
+    <p class="pub-venue"><em>ACM CHI 2023</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3544548.3581115" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="assets/pdfs/nicholasmprr0lk23.pdf" target="_blank" rel="noopener" aria-label="PDF: Escapement: A Tool for Interactive Prototyping with Video via Sensor-Mediated Abstraction of Time"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{nicholas2023escapement,
+  author    = {Molly Jane Nicholas and Nicolai Marquardt and Michel Pahud and Nathalie Riche and Hugo Romat and Christopher Collins and David Ledo and Rohan Kadekodi and Badrish Chandramouli and Ken Hinckley},
+  title     = {{Escapement: A Tool for Interactive Prototyping with Video via Sensor-Mediated Abstraction of Time}},
+  booktitle = {Proceedings of the CHI Conference on Human Factors in Computing Systems},
+  year      = {2023},
+  doi       = {10.1145/3544548.3581115},
+  url       = {https://doi.org/10.1145/3544548.3581115}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-lismo0srpsbhr23">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/lismo0srpsbhr23.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3544548.3581300" target="_blank" rel="noopener">AdHocProx: Sensing Mobile, Ad-Hoc Collaborative Device Formations using Dual Ultra-Wideband Radios</a></h3>
+    <p class="pub-authors"><span class="au">Richard Li</span>, <span class="au">Teddy Seyed</span>, <span class="au">Nicolai Marquardt</span>, <span class="au">Eyal Ofek</span>, <span class="au">Steve Hodges</span>, <span class="au">Mike Sinclair</span>, <span class="au me">Hugo Romat</span>, <span class="au">Michel Pahud</span>, <span class="au">Jatin Sharma</span>, <span class="au">William A. S. Buxton</span>, <span class="au">Ken Hinckley</span>, <span class="au">Nathalie Riche</span></p>
+    <p class="pub-venue"><em>ACM CHI 2023</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3544548.3581300" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="assets/pdfs/lismo0srpsbhr23.pdf" target="_blank" rel="noopener" aria-label="PDF: AdHocProx: Sensing Mobile, Ad-Hoc Collaborative Device Formations using Dual Ultra-Wideband Radios"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{li2023adhocprox,
+  author    = {Richard Li and Teddy Seyed and Nicolai Marquardt and Eyal Ofek and Steve Hodges and Mike Sinclair and Hugo Romat and Michel Pahud and Jatin Sharma and William A. S. Buxton and Ken Hinckley and Nathalie Riche},
+  title     = {{AdHocProx: Sensing Mobile, Ad-Hoc Collaborative Device Formations using Dual Ultra-Wideband Radios}},
+  booktitle = {Proceedings of the CHI Conference on Human Factors in Computing Systems},
+  year      = {2023},
+  doi       = {10.1145/3544548.3581300},
+  url       = {https://doi.org/10.1145/3544548.3581300}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+</ol>
+<h3 class="pub-year"><span class="y">2022</span><span class="ln"></span></h3>
+<ol class="pub-list">
+<li class="pub" id="pub-yuanrmnsrlpgv0h22">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/yuanrmnsrlpgv0h22.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3491102.3517702" target="_blank" rel="noopener">Understanding Multi-Device Usage Patterns: Physical Device Configurations and Fragmented Workflows</a></h3>
+    <p class="pub-authors"><span class="au">Ye Yuan</span>, <span class="au">Nathalie Riche</span>, <span class="au">Nicolai Marquardt</span>, <span class="au">Molly Jane Nicholas</span>, <span class="au">Teddy Seyed</span>, <span class="au me">Hugo Romat</span>, <span class="au">Bongshin Lee</span>, <span class="au">Michel Pahud</span>, <span class="au">Jonathan Goldstein</span>, <span class="au">Rojin Vishkaie</span>, <span class="au">Christian Holz</span>, <span class="au">Ken Hinckley</span></p>
+    <p class="pub-venue"><em>ACM CHI 2022</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3491102.3517702" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="assets/pdfs/yuanrmnsrlpgv0h22.pdf" target="_blank" rel="noopener" aria-label="PDF: Understanding Multi-Device Usage Patterns: Physical Device Configurations and Fragmented Workflows"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{yuan2022understanding,
+  author    = {Ye Yuan and Nathalie Riche and Nicolai Marquardt and Molly Jane Nicholas and Teddy Seyed and Hugo Romat and Bongshin Lee and Michel Pahud and Jonathan Goldstein and Rojin Vishkaie and Christian Holz and Ken Hinckley},
+  title     = {{Understanding Multi-Device Usage Patterns: Physical Device Configurations and Fragmented Workflows}},
+  booktitle = {Proceedings of the CHI Conference on Human Factors in Computing Systems},
+  year      = {2022},
+  doi       = {10.1145/3491102.3517702},
+  url       = {https://doi.org/10.1145/3491102.3517702}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-strelijfmr022">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/strelijfmr022.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3491102.3501878" target="_blank" rel="noopener">TapType: Ten-finger text entry on everyday surfaces via Bayesian inference</a></h3>
+    <p class="pub-authors"><span class="au">Paul Streli</span>, <span class="au">Jiaxi Jiang</span>, <span class="au">Andreas Rene Fender</span>, <span class="au">Manuel Meier</span>, <span class="au me">Hugo Romat</span>, <span class="au">Christian Holz</span></p>
+    <p class="pub-venue"><em>ACM CHI 2022</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3491102.3501878" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="https://doi.org/10.48550/arXiv.2410.06001" target="_blank" rel="noopener"><svg><use href="#arxiv"/></svg>arXiv</a><a href="assets/pdfs/strelijfmr022.pdf" target="_blank" rel="noopener" aria-label="PDF: TapType: Ten-finger text entry on everyday surfaces via Bayesian inference"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{streli2022taptype,
+  author    = {Paul Streli and Jiaxi Jiang and Andreas Rene Fender and Manuel Meier and Hugo Romat and Christian Holz},
+  title     = {{TapType: Ten-finger text entry on everyday surfaces via Bayesian inference}},
+  booktitle = {Proceedings of the CHI Conference on Human Factors in Computing Systems},
+  year      = {2022},
+  doi       = {10.1145/3491102.3501878},
+  url       = {https://doi.org/10.1145/3491102.3501878}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-romatmhr22">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/romatmhr22.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3491102.3501988" target="_blank" rel="noopener">Style Blink: Exploring Digital Inking of Structured Information via Handcrafted Styling as a First-Class Object</a></h3>
+    <p class="pub-authors"><span class="au me">Hugo Romat</span>, <span class="au">Nicolai Marquardt</span>, <span class="au">Ken Hinckley</span>, <span class="au">Nathalie Henry Riche</span></p>
+    <p class="pub-venue"><em>ACM CHI 2022</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3491102.3501988" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="assets/pdfs/romatmhr22.pdf" target="_blank" rel="noopener" aria-label="PDF: Style Blink: Exploring Digital Inking of Structured Information via Handcrafted Styling as a First-Class Object"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{romat2022style,
+  author    = {Hugo Romat and Nicolai Marquardt and Ken Hinckley and Nathalie Henry Riche},
+  title     = {{Style Blink: Exploring Digital Inking of Structured Information via Handcrafted Styling as a First-Class Object}},
+  booktitle = {Proceedings of the CHI Conference on Human Factors in Computing Systems},
+  year      = {2022},
+  doi       = {10.1145/3491102.3501988},
+  url       = {https://doi.org/10.1145/3491102.3501988}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-wangrcrmb22">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/wangrcrmb22.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1109/TVCG.2021.3114849" target="_blank" rel="noopener">Interactive Data Comics</a></h3>
+    <p class="pub-authors"><span class="au">Zezhong Wang</span>, <span class="au me">Hugo Romat</span>, <span class="au">Fanny Chevalier</span>, <span class="au">Nathalie Henry Riche</span>, <span class="au">Dave Murray-Rust</span>, <span class="au">Benjamin Bach</span></p>
+    <p class="pub-venue"><em>IEEE TVCG 2022</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1109/TVCG.2021.3114849" target="_blank" rel="noopener"><svg><use href="#doi"/></svg>DOI</a><a href="assets/pdfs/wangrcrmb22.pdf" target="_blank" rel="noopener" aria-label="PDF: Interactive Data Comics"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@article{wang2022interactive,
+  author    = {Zezhong Wang and Hugo Romat and Fanny Chevalier and Nathalie Henry Riche and Dave Murray-Rust and Benjamin Bach},
+  title     = {{Interactive Data Comics}},
+  journal   = {IEEE Transactions on Visualization and Computer Graphics},
+  year      = {2022},
+  doi       = {10.1109/TVCG.2021.3114849},
+  url       = {https://doi.org/10.1109/TVCG.2021.3114849}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-strelijfmr022a">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/strelijfmr022.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3491101.3519900" target="_blank" rel="noopener">Demonstrating TapType for mobile ten-finger text entry anywhere</a></h3>
+    <p class="pub-authors"><span class="au">Paul Streli</span>, <span class="au">Jiaxi Jiang</span>, <span class="au">Andreas Rene Fender</span>, <span class="au">Manuel Meier</span>, <span class="au me">Hugo Romat</span>, <span class="au">Christian Holz</span></p>
+    <p class="pub-venue"><em>ACM CHI Extended Abstracts 2022</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3491101.3519900" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{streli2022demonstrating,
+  author    = {Paul Streli and Jiaxi Jiang and Andreas Rene Fender and Manuel Meier and Hugo Romat and Christian Holz},
+  title     = {{Demonstrating TapType for mobile ten-finger text entry anywhere}},
+  booktitle = {Extended Abstracts of the CHI Conference on Human Factors in Computing Systems},
+  year      = {2022},
+  doi       = {10.1145/3491101.3519900},
+  url       = {https://doi.org/10.1145/3491101.3519900}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+</ol>
+<h3 class="pub-year"><span class="y">2021</span><span class="ln"></span></h3>
+<ol class="pub-list">
+<li class="pub" id="pub-zhengcrrbchm21">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/zhengcrrbchm21.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3411764.3445508" target="_blank" rel="noopener">Sketchnote Components, Design Space Dimensions, and Strategies for Effective Visual Note Taking</a></h3>
+    <p class="pub-authors"><span class="au">Rebecca Zheng</span>, <span class="au">Marina Fernández Camporro</span>, <span class="au me">Hugo Romat</span>, <span class="au">Nathalie Henry Riche</span>, <span class="au">Benjamin Bach</span>, <span class="au">Fanny Chevalier</span>, <span class="au">Ken Hinckley</span>, <span class="au">Nicolai Marquardt</span></p>
+    <p class="pub-venue"><em>ACM CHI 2021</em> <span class="award">Best Paper</span></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3411764.3445508" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="assets/pdfs/zhengcrrbchm21.pdf" target="_blank" rel="noopener" aria-label="PDF: Sketchnote Components, Design Space Dimensions, and Strategies for Effective Visual Note Taking"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{zheng2021sketchnote,
+  author    = {Rebecca Zheng and Marina Fernández Camporro and Hugo Romat and Nathalie Henry Riche and Benjamin Bach and Fanny Chevalier and Ken Hinckley and Nicolai Marquardt},
+  title     = {{Sketchnote Components, Design Space Dimensions, and Strategies for Effective Visual Note Taking}},
+  booktitle = {Proceedings of the CHI Conference on Human Factors in Computing Systems},
+  year      = {2021},
+  doi       = {10.1145/3411764.3445508},
+  url       = {https://doi.org/10.1145/3411764.3445508}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-romatfm021a">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/romatfm021a.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1109/VR50410.2021.00053" target="_blank" rel="noopener">Flashpen: A High-Fidelity and High-Precision Multi-Surface Pen for Virtual Reality</a></h3>
+    <p class="pub-authors"><span class="au me">Hugo Romat</span>, <span class="au">Andreas Fender</span>, <span class="au">Manuel Meier</span>, <span class="au">Christian Holz</span></p>
+    <p class="pub-venue"><em>IEEE VR 2021</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1109/VR50410.2021.00053" target="_blank" rel="noopener"><svg><use href="#doi"/></svg>DOI</a><a href="assets/pdfs/romatfm021a.pdf" target="_blank" rel="noopener" aria-label="PDF: Flashpen: A High-Fidelity and High-Precision Multi-Surface Pen for Virtual Reality"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{romat2021flashpen,
+  author    = {Hugo Romat and Andreas Fender and Manuel Meier and Christian Holz},
+  title     = {{Flashpen: A High-Fidelity and High-Precision Multi-Surface Pen for Virtual Reality}},
+  booktitle = {IEEE Conference on Virtual Reality and 3D User Interfaces (VR)},
+  year      = {2021},
+  doi       = {10.1109/VR50410.2021.00053},
+  url       = {https://doi.org/10.1109/VR50410.2021.00053}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-romatap21">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/romatap21.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1109/TVCG.2019.2950932" target="_blank" rel="noopener">Expressive Authoring of Node-Link Diagrams With Graphies</a></h3>
+    <p class="pub-authors"><span class="au me">Hugo Romat</span>, <span class="au">Caroline Appert</span>, <span class="au">Emmanuel Pietriga</span></p>
+    <p class="pub-venue"><em>IEEE TVCG 2021</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1109/TVCG.2019.2950932" target="_blank" rel="noopener"><svg><use href="#doi"/></svg>DOI</a><a href="assets/pdfs/romatap21.pdf" target="_blank" rel="noopener" aria-label="PDF: Expressive Authoring of Node-Link Diagrams With Graphies"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@article{romat2021expressive,
+  author    = {Hugo Romat and Caroline Appert and Emmanuel Pietriga},
+  title     = {{Expressive Authoring of Node-Link Diagrams With Graphies}},
+  journal   = {IEEE Transactions on Visualization and Computer Graphics},
+  year      = {2021},
+  doi       = {10.1109/TVCG.2019.2950932},
+  url       = {https://doi.org/10.1109/TVCG.2019.2950932}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-romatfm021">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/romatfm021a.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3411763.3451550" target="_blank" rel="noopener">Demonstration of Flashpen: A high-fidelity and high-precision multi-surface pen for Virtual Reality</a></h3>
+    <p class="pub-authors"><span class="au me">Hugo Romat</span>, <span class="au">Andreas Rene Fender</span>, <span class="au">Manuel Meier</span>, <span class="au">Christian Holz</span></p>
+    <p class="pub-venue"><em>ACM CHI Extended Abstracts 2021</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3411763.3451550" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{romat2021demonstration,
+  author    = {Hugo Romat and Andreas Rene Fender and Manuel Meier and Christian Holz},
+  title     = {{Demonstration of Flashpen: A high-fidelity and high-precision multi-surface pen for Virtual Reality}},
+  booktitle = {Extended Abstracts of the CHI Conference on Human Factors in Computing Systems},
+  year      = {2021},
+  doi       = {10.1145/3411763.3451550},
+  url       = {https://doi.org/10.1145/3411763.3451550}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-romatfm021">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/romatfm021a.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1109/VRW52623.2021.00257" target="_blank" rel="noopener">Demonstrating High-Precision and High-Fidelity Digital Inking for Virtual Reality</a></h3>
+    <p class="pub-authors"><span class="au me">Hugo Romat</span>, <span class="au">Andreas Fender</span>, <span class="au">Manuel Meier</span>, <span class="au">Christian Holz</span></p>
+    <p class="pub-venue"><em>IEEE VR Workshops 2021</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1109/VRW52623.2021.00257" target="_blank" rel="noopener"><svg><use href="#doi"/></svg>DOI</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{romat2021demonstrating,
+  author    = {Hugo Romat and Andreas Fender and Manuel Meier and Christian Holz},
+  title     = {{Demonstrating High-Precision and High-Fidelity Digital Inking for Virtual Reality}},
+  booktitle = {IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops},
+  year      = {2021},
+  doi       = {10.1109/VRW52623.2021.00257},
+  url       = {https://doi.org/10.1109/VRW52623.2021.00257}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-marquardtr0rpbl21">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/marquardtr0rpbl21.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3472749.3474820" target="_blank" rel="noopener">AirConstellations: In-Air Device Formations for Cross-Device Interaction via Multiple Spatially-Aware Armatures</a></h3>
+    <p class="pub-authors"><span class="au">Nicolai Marquardt</span>, <span class="au">Nathalie Henry Riche</span>, <span class="au">Christian Holz</span>, <span class="au me">Hugo Romat</span>, <span class="au">Michel Pahud</span>, <span class="au">Frederik Brudy</span>, <span class="au">David Ledo</span>, <span class="au">Chunjong Park</span>, <span class="au">Molly Jane Nicholas</span>, <span class="au">Teddy Seyed</span>, <span class="au">Eyal Ofek</span>, <span class="au">Bongshin Lee</span>, <span class="au">William A. S. Buxton</span>, <span class="au">Ken Hinckley</span></p>
+    <p class="pub-venue"><em>ACM UIST 2021</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3472749.3474820" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="assets/pdfs/marquardtr0rpbl21.pdf" target="_blank" rel="noopener" aria-label="PDF: AirConstellations: In-Air Device Formations for Cross-Device Interaction via Multiple Spatially-Aware Armatures"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{marquardt2021airconstellations,
+  author    = {Nicolai Marquardt and Nathalie Henry Riche and Christian Holz and Hugo Romat and Michel Pahud and Frederik Brudy and David Ledo and Chunjong Park and Molly Jane Nicholas and Teddy Seyed and Eyal Ofek and Bongshin Lee and William A. S. Buxton and Ken Hinckley},
+  title     = {{AirConstellations: In-Air Device Formations for Cross-Device Interaction via Multiple Spatially-Aware Armatures}},
+  booktitle = {Proceedings of the ACM Symposium on User Interface Software and Technology},
+  year      = {2021},
+  doi       = {10.1145/3472749.3474820},
+  url       = {https://doi.org/10.1145/3472749.3474820}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+</ol>
+<h3 class="pub-year"><span class="y">2020</span><span class="ln"></span></h3>
+<ol class="pub-list">
+<li class="pub" id="pub-romat0rp0rbh20">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/romat0rp0rbh20.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3379337.3415861" target="_blank" rel="noopener">Tilt-Responsive Techniques for Digital Drawing Boards</a></h3>
+    <p class="pub-authors"><span class="au me">Hugo Romat</span>, <span class="au">Christopher Collins</span>, <span class="au">Nathalie Henry Riche</span>, <span class="au">Michel Pahud</span>, <span class="au">Christian Holz</span>, <span class="au">Adam Riddle</span>, <span class="au">Bill Buxton</span>, <span class="au">Ken Hinckley</span></p>
+    <p class="pub-venue"><em>ACM UIST 2020</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3379337.3415861" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="assets/pdfs/romat0rp0rbh20.pdf" target="_blank" rel="noopener" aria-label="PDF: Tilt-Responsive Techniques for Digital Drawing Boards"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{romat2020tiltresponsive,
+  author    = {Hugo Romat and Christopher Collins and Nathalie Henry Riche and Michel Pahud and Christian Holz and Adam Riddle and Bill Buxton and Ken Hinckley},
+  title     = {{Tilt-Responsive Techniques for Digital Drawing Boards}},
+  booktitle = {Proceedings of the ACM Symposium on User Interface Software and Technology},
+  year      = {2020},
+  doi       = {10.1145/3379337.3415861},
+  url       = {https://doi.org/10.1145/3379337.3415861}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-romatrhdah20">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/romatrhdah20.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3313831.3376348" target="_blank" rel="noopener">Dear Pictograph: Investigating the Role of Personalization and Immersion for Consuming and Enjoying Visualizations</a></h3>
+    <p class="pub-authors"><span class="au me">Hugo Romat</span>, <span class="au">Nathalie Henry Riche</span>, <span class="au">Christophe Hurter</span>, <span class="au">Steven Mark Drucker</span>, <span class="au">Fereshteh Amini</span>, <span class="au">Ken Hinckley</span></p>
+    <p class="pub-venue"><em>ACM CHI 2020</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3313831.3376348" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="assets/pdfs/romatrhdah20.pdf" target="_blank" rel="noopener" aria-label="PDF: Dear Pictograph: Investigating the Role of Personalization and Immersion for Consuming and Enjoying Visualizations"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{romat2020dear,
+  author    = {Hugo Romat and Nathalie Henry Riche and Christophe Hurter and Steven Mark Drucker and Fereshteh Amini and Ken Hinckley},
+  title     = {{Dear Pictograph: Investigating the Role of Personalization and Immersion for Consuming and Enjoying Visualizations}},
+  booktitle = {Proceedings of the CHI Conference on Human Factors in Computing Systems},
+  year      = {2020},
+  doi       = {10.1145/3313831.3376348},
+  url       = {https://doi.org/10.1145/3313831.3376348}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+</ol>
+<h3 class="pub-year"><span class="y">2019</span><span class="ln"></span></h3>
+<ol class="pub-list">
+<li class="pub" id="pub-romatprha19">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/romatprha19.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3332165.3347934" target="_blank" rel="noopener">SpaceInk: Making Space for In-Context Annotations</a></h3>
+    <p class="pub-authors"><span class="au me">Hugo Romat</span>, <span class="au">Emmanuel Pietriga</span>, <span class="au">Nathalie Henry Riche</span>, <span class="au">Ken Hinckley</span>, <span class="au">Caroline Appert</span></p>
+    <p class="pub-venue"><em>ACM UIST 2019</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3332165.3347934" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="assets/pdfs/romatprha19.pdf" target="_blank" rel="noopener" aria-label="PDF: SpaceInk: Making Space for In-Context Annotations"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{romat2019spaceink,
+  author    = {Hugo Romat and Emmanuel Pietriga and Nathalie Henry Riche and Ken Hinckley and Caroline Appert},
+  title     = {{SpaceInk: Making Space for In-Context Annotations}},
+  booktitle = {Proceedings of the ACM Symposium on User Interface Software and Technology},
+  year      = {2019},
+  doi       = {10.1145/3332165.3347934},
+  url       = {https://doi.org/10.1145/3332165.3347934}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-romatlpa19">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/romatlpa19.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1007/978-3-030-29384-0_37" target="_blank" rel="noopener">Influence of Color and Size of Particles on Their Perceived Speed in Node-Link Diagrams</a></h3>
+    <p class="pub-authors"><span class="au me">Hugo Romat</span>, <span class="au">Dylan Lebout</span>, <span class="au">Emmanuel Pietriga</span>, <span class="au">Caroline Appert</span></p>
+    <p class="pub-venue"><em>IFIP INTERACT 2019</em> <span class="award">Best Doctoral Student Paper</span></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1007/978-3-030-29384-0_37" target="_blank" rel="noopener"><svg><use href="#doi"/></svg>DOI</a><a href="assets/pdfs/romatlpa19.pdf" target="_blank" rel="noopener" aria-label="PDF: Influence of Color and Size of Particles on Their Perceived Speed in Node-Link Diagrams"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{romat2019influence,
+  author    = {Hugo Romat and Dylan Lebout and Emmanuel Pietriga and Caroline Appert},
+  title     = {{Influence of Color and Size of Particles on Their Perceived Speed in Node-Link Diagrams}},
+  booktitle = {Human-Computer Interaction – INTERACT},
+  year      = {2019},
+  doi       = {10.1007/978-3-030-29384-0_37},
+  url       = {https://doi.org/10.1007/978-3-030-29384-0_37}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-romat19">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/romat19.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://tel.archives-ouvertes.fr/tel-02390645" target="_blank" rel="noopener">From data exploration to presentation : designing new systems and interaction techniques to enhance the sense-making process. (De l&#x27;exploration des données à la présentation : concevoir de nouveaux systèmes et techniques d&#x27;interaction pour améliorer la création de sens à partir de données)</a></h3>
+    <p class="pub-authors"><span class="au me">Hugo Romat</span></p>
+    <p class="pub-venue"><em>Ph.D. Dissertation · 2019</em></p>
+    <div class="pub-icons"><a href="https://tel.archives-ouvertes.fr/tel-02390645" target="_blank" rel="noopener"><svg><use href="#doi"/></svg>DOI</a><a href="assets/pdfs/romat19.pdf" target="_blank" rel="noopener" aria-label="PDF: From data exploration to presentation : designing new systems and interaction techniques to enhance the sense-making process. (De l&#x27;exploration des données à la présentation : concevoir de nouveaux systèmes et techniques d&#x27;interaction pour améliorer la création de sens à partir de données)"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@phdthesis{romat2019from,
+  author    = {Hugo Romat},
+  title     = {{From data exploration to presentation : designing new systems and interaction techniques to enhance the sense-making process. (De l&#x27;exploration des données à la présentation : concevoir de nouveaux systèmes et techniques d&#x27;interaction pour améliorer la création de sens à partir de données)}},
+  school    = {Université Paris-Saclay (Inria)},
+  year      = {2019}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+<li class="pub" id="pub-romatrhlapc19">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/romatrhlapc19.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3290605.3300272" target="_blank" rel="noopener">ActiveInk: (Th)Inking with Data</a></h3>
+    <p class="pub-authors"><span class="au me">Hugo Romat</span>, <span class="au">Nathalie Henry Riche</span>, <span class="au">Ken Hinckley</span>, <span class="au">Bongshin Lee</span>, <span class="au">Caroline Appert</span>, <span class="au">Emmanuel Pietriga</span>, <span class="au">Christopher Collins</span></p>
+    <p class="pub-venue"><em>ACM CHI 2019</em> <span class="award">Honorable Mention</span></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3290605.3300272" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="assets/pdfs/romatrhlapc19.pdf" target="_blank" rel="noopener" aria-label="PDF: ActiveInk: (Th)Inking with Data"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{romat2019activeink,
+  author    = {Hugo Romat and Nathalie Henry Riche and Ken Hinckley and Bongshin Lee and Caroline Appert and Emmanuel Pietriga and Christopher Collins},
+  title     = {{ActiveInk: (Th)Inking with Data}},
+  booktitle = {Proceedings of the CHI Conference on Human Factors in Computing Systems},
+  year      = {2019},
+  doi       = {10.1145/3290605.3300272},
+  url       = {https://doi.org/10.1145/3290605.3300272}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+</ol>
+<h3 class="pub-year"><span class="y">2018</span><span class="ln"></span></h3>
+<ol class="pub-list">
+<li class="pub" id="pub-romatabrp18">
+  <div class="pub-thumb" aria-hidden="true"><img src="assets/pubs/romatabrp18.jpg" alt="" decoding="async"></div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1145/3173574.3173761" target="_blank" rel="noopener">Animated Edge Textures in Node-Link Diagrams: a Design Space and Initial Evaluation</a></h3>
+    <p class="pub-authors"><span class="au me">Hugo Romat</span>, <span class="au">Caroline Appert</span>, <span class="au">Benjamin Bach</span>, <span class="au">Nathalie Henry Riche</span>, <span class="au">Emmanuel Pietriga</span></p>
+    <p class="pub-venue"><em>ACM CHI 2018</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1145/3173574.3173761" target="_blank" rel="noopener"><svg><use href="#acm"/></svg>ACM</a><a href="assets/pdfs/romatabrp18.pdf" target="_blank" rel="noopener" aria-label="PDF: Animated Edge Textures in Node-Link Diagrams: a Design Space and Initial Evaluation"><svg><use href="#pdf"/></svg>PDF</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{romat2018animated,
+  author    = {Hugo Romat and Caroline Appert and Benjamin Bach and Nathalie Henry Riche and Emmanuel Pietriga},
+  title     = {{Animated Edge Textures in Node-Link Diagrams: a Design Space and Initial Evaluation}},
+  booktitle = {Proceedings of the CHI Conference on Human Factors in Computing Systems},
+  year      = {2018},
+  doi       = {10.1145/3173574.3173761},
+  url       = {https://doi.org/10.1145/3173574.3173761}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+</ol>
+<h3 class="pub-year"><span class="y">2016</span><span class="ln"></span></h3>
+<ol class="pub-list">
+<li class="pub" id="pub-romatwwjb16">
+  <div class="pub-thumb pub-thumb-text" aria-hidden="true">HRI</div>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://doi.org/10.1109/HRI.2016.7451827" target="_blank" rel="noopener">Natural Human-Robot Interaction Using Social Cues</a></h3>
+    <p class="pub-authors"><span class="au me">Hugo Romat</span>, <span class="au">Mary-Anne Williams</span>, <span class="au">Xun Wang</span>, <span class="au">Benjamin Johnston</span>, <span class="au">Henry Bard</span></p>
+    <p class="pub-venue"><em>ACM/IEEE HRI 2016</em></p>
+    <div class="pub-icons"><a href="https://doi.org/10.1109/HRI.2016.7451827" target="_blank" rel="noopener"><svg><use href="#doi"/></svg>DOI</a><button type="button" class="cite-btn" aria-expanded="false"><svg><use href="#cite"/></svg>Cite (BibTeX)</button></div>
+    <div class="cite-pop" aria-hidden="true">
+      <div class="cite-card">
+        <div class="cite-head">
+          <span class="cite-lab">BibTeX</span>
+          <div class="cite-actions">
+            <span class="cite-status">Copied</span>
+            <button type="button" class="copy-btn">Copy</button>
+            <button type="button" class="close-btn" aria-label="Close">×</button>
+          </div>
+        </div>
+        <pre class="bibtex">@inproceedings{romat2016natural,
+  author    = {Hugo Romat and Mary-Anne Williams and Xun Wang and Benjamin Johnston and Henry Bard},
+  title     = {{Natural Human-Robot Interaction Using Social Cues}},
+  booktitle = {Proceedings of the ACM/IEEE International Conference on Human-Robot Interaction},
+  year      = {2016},
+  doi       = {10.1109/HRI.2016.7451827},
+  url       = {https://doi.org/10.1109/HRI.2016.7451827}
+}</pre>
+      </div>
+    </div>
+  </div>
+</li>
+</ol>
+    </div>
+  </section>
+
+  <section id="education" class="band band-white">
+    <div class="wrap">
+      <p class="eyebrow">Background</p>
+      <h2 class="section">Education</h2>
+      <div class="xp-list">
+        <div class="xp edu">
+          <div class="xp-logo"><img src="assets/logos/inria_logo.png" alt="Inria" /></div>
+          <div class="xp-body">
+            <div class="xp-head">
+              <div>
+                <p class="xp-role">Ph.D. in Computer Science</p>
+                <p class="xp-org">Inria <span class="place">&middot; Paris</span></p>
+              </div>
+            </div>
+            <p class="xp-note">From data exploration to presentation: new systems and interaction techniques for sensemaking.</p>
+          </div>
+        </div>
+        <div class="xp edu">
+          <div class="xp-logo"><img src="assets/logos/ensc.svg" alt="ENSC Bordeaux" /></div>
+          <div class="xp-body">
+            <div class="xp-head">
+              <div>
+                <p class="xp-role">M.Sc. in Computer Science</p>
+                <p class="xp-org">ENSC Bordeaux INP &middot; Universit&eacute; Laval, Canada</p>
+              </div>
+            </div>
+            <p class="xp-note">Human&ndash;computer interaction, computer science, robotics, and cognitive science.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span>&copy; <span id="yr">2026</span> Hugo Romat</span>
+    <span>Seattle, WA &middot; <a href="mailto:romathugo@microsoft.com">romathugo@microsoft.com</a></span>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>
