@@ -57,8 +57,8 @@ profiles. To change any of them, edit `index.html` (search for `scholar.google`,
 ## Journey
 
 The `#journey` section has three chapters (`#area-ai`, `#area-ink`, `#area-data`). Each has
-Why it matters, Impact, a media strip, Key papers (linking to `#pub-<id>` entries, which
-scroll to and highlight the paper), and Product impact.
+Motivation, My work, a media strip, Key papers (linking to `#pub-<id>` entries, which
+scroll to and highlight the paper), and In products.
 
 ## Publications
 
